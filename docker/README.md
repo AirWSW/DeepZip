@@ -9,8 +9,8 @@ General installation instructions are
 [on the Docker site](https://docs.docker.com/installation/), but we give some
 quick links here:
 
-* [OSX](https://docs.docker.com/installation/mac/): [docker toolbox](https://www.docker.com/toolbox)
-* [ubuntu](https://docs.docker.com/installation/ubuntulinux/)
+- [OSX](https://docs.docker.com/installation/mac/): [docker toolbox](https://www.docker.com/toolbox)
+- [ubuntu](https://docs.docker.com/installation/ubuntulinux/)
 
 ## Running the container
 
@@ -28,8 +28,7 @@ Build the container and start a bash
 
     $ make bash
 
-For GPU support install NVIDIA drivers (ideally latest) and
-[nvidia-docker](https://github.com/NVIDIA/nvidia-docker). Run using
+For GPU support install NVIDIA drivers (ideally latest) and [nvidia-docker](https://github.com/NVIDIA/nvidia-docker). Run using
 
     $ make notebook GPU=0 # or [ipython, bash]
 
@@ -47,7 +46,6 @@ Prints all make tasks
     $ make help
 
 You can change Theano parameters by editing `/docker/theanorc`.
-
 
 Note: If you would have a problem running nvidia-docker you may try the old way
 we have used. But it is not recommended. If you find a bug in the nvidia-docker report
