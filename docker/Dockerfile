@@ -39,8 +39,8 @@ RUN useradd -m -s /bin/bash -u $nb_uid $nb_user && \
     mkdir -p /src && \
     chown $nb_user:$nb_user /src
 
-# Add user keras to nopasswd sudoers
-RUN echo "keras ALL=(ALL:ALL) NOPASSWD:ALL" >> /etc/sudoers
+# Add user to nopasswd sudoers
+RUN echo "$nb_user ALL=(ALL:ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 USER $nb_user
 
